@@ -32,16 +32,23 @@ Project Steps and Findings:
       ![Sysmon Network Connection Detection](https://github.com/user-attachments/assets/eb4d6bdd-7396-4889-924d-aad1f0865976)
 
 File Creation Monitoring
+
   -Created test files to observe file activity tracking
+  
     -Event ID 11 (FileCreate): Logged new file creations, helping detect unauthorized file modifications.
     ![Sysmon File Creation Detection](https://github.com/user-attachments/assets/6ce19a31-0eb7-48ad-875e-b9a1ae2e4370)
 
 Registry Modification Monitoring
+
   -Modified the Window registry to test detection.
+  
     -Event ID 13 (Registry Value Set): Captured changes to registry keys: a common attack vector for persistence tactics.
     ![Sysmon Widnows Registry Modification Detection](https://github.com/user-attachments/assets/09b02b6d-811d-4b73-938d-acc43993c3f9)
 
 Key Takeaways and Next Steps
+
   -Sysmon effectively tracks process execution, network connections, file creation, and registry changes, making it a powerful tool for malware detection, unauthorized access monitoring, and insider threat identification.
+  
   -Next Step:
+  
     -The next step for a Security team would be to forward the Sysmon logs to Microsoft Sentinel for a real time alerting and correlation, improving security visibility through a single-pane-of-glass. This is what's known as a SIEM or Security Information and Event Management System.
