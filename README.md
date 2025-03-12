@@ -9,15 +9,25 @@ Tools Used:
 
 Project Steps and Findings:
   -Sysmon Installation and Configuration
+  
   -Installed Sysmon and applied the SwiftOnSecurity config to expand event tracking beyond basic process creation and termination.
+  
   -Process Execution and Network Monitoring
+  
     -Ran the following commands to generate logs
+    
       -Curl (to test outbound network requests)
+      
       -Whoami (to check user identity)
+
+      
       -Ping (to simulate network activity)
+      
     -Observed Sysmon Event Logs
+    
       -Event ID 1 (Process Create): Captured PowerShell executions, including full command-line arguments.
       ![Sysmon Process Creation Detection](https://github.com/user-attachments/assets/d4822452-52a1-4293-9d83-4b70fb076ef8)
+      
       -Event ID 3 (Network Connection Detection): Logged outbound network connections initiated by executed processes.
       ![Sysmon Network Connection Detection](https://github.com/user-attachments/assets/eb4d6bdd-7396-4889-924d-aad1f0865976)
 
